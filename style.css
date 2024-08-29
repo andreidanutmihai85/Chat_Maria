@@ -1,5 +1,4 @@
 
-/* CSS comes here */
 body {
     font-family: arial;
 
@@ -34,10 +33,4 @@ color: rgb(19, 233, 12);
 #id02{
 
 color: rgb(240, 11, 42);
-}
-
-p{
-    color: rgb(68, 0, 255);
-    font-size: 22px;
-    text-decoration: solid;
 }
