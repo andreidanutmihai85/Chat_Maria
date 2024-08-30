@@ -1,4 +1,6 @@
-
+#mic{
+    display: none;
+}
 body {
     font-family: arial;
 

@@ -1,6 +1,3 @@
-
-
-
 function runSpeechRecognition() {
 var output = document.getElementById("output");
 var action = document.getElementById("action");
@@ -18,47 +15,9 @@ voice = transcript;
 recognition.start();
 
 
-
-
-
-
-
-
-                
-
-
-
-
-
-
-
 function compareResult(){
 
             function caisa(){
-       
-                  
-               
-            
-
- // ===================PROMISES=====================
-//  let waitCheck = new Promise((res, rej) => {
-  
-//     if(caisa == err){
-//         res("succes")
-//     }else{
-//         rej("faild")
-//     }
-//     })
-//     waitCheck.then((message) => {
-//         console.log("este ok " + message);
-        
-//           }).catch((message) => {
-//         console.log("nu este ok " + message);
-              
-//           })
-      // ===================PROMISES=====================  
-  
-
 
   var expr = voice;
 switch (expr) {
@@ -70,6 +29,8 @@ function Crefresh() {
                       return window.location.reload();
                      }
                      setTimeout(Crefresh, 5000);
+                    
+                
 break;
 
 case 'Andreea':
@@ -110,32 +71,27 @@ break;
 default:
 console.log("default");
 
+
 }}
+// =================TRY/CATCH=====================
 try{
 let z = caisa(voice,"bună")
  console.log(z);
 }catch(error){
     let beat12 = new Audio('media/nu_am_inteles.mp4');
     beat12.play();
-    function Crefresh() {
-                          return window.location.reload();
-                         }
-                         setTimeout(Crefresh, 10000);
-    
+function Crefresh() {
+        window.location.reload();
+       setTimeout(micPicture(), 5000);
 }
-
-
-
-
-}
+// =================TRY/CATCH=====================
+setTimeout(Crefresh, 10000);
+}}
 setTimeout(compareResult, 6000);
-
-
-
-       
-
-
-            
 }
-
 setTimeout(runSpeechRecognition, 3700);
+
+function micPicture() {
+    return document.getElementById("mic").style.display = "block";
+     }
+     setTimeout(micPicture, 4000);
