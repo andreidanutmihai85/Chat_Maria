@@ -1,10 +1,12 @@
 
+
+
 function runSpeechRecognition() {
 var output = document.getElementById("output");
 var action = document.getElementById("action");
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
-        
+
 recognition.onresult = function(event) {
 var transcript = event.results[0][0].transcript;
 output.innerHTML = "<b>Text:</b> "  + transcript 
@@ -67,7 +69,7 @@ beat.play();
 function Crefresh() {
                       return window.location.reload();
                      }
-                     setTimeout(Crefresh, 6000);
+                     setTimeout(Crefresh, 5000);
 break;
 
 case 'Andreea':
@@ -106,16 +108,21 @@ function Crefresh() {
 break;
 
 default:
-let beat4 = new Audio('media/nu_am_inteles.mp4');
-beat4.play();
-function Crefresh() {
-      return window.location.reload();
-}
-setTimeout(Crefresh, 3000);
+console.log("default");
+
 }}
+try{
 let z = caisa(voice,"bună")
  console.log(z);
-
+}catch(error){
+    let beat12 = new Audio('media/nu_am_inteles.mp4');
+    beat12.play();
+    function Crefresh() {
+                          return window.location.reload();
+                         }
+                         setTimeout(Crefresh, 10000);
+    
+}
 
 
 
@@ -130,4 +137,5 @@ setTimeout(compareResult, 6000);
 
             
 }
+
 setTimeout(runSpeechRecognition, 3700);
